@@ -1,38 +1,68 @@
 .App {
-  text-align: center;
+  height: 800px;
+    width: 650px;
+    outline: 1px solid black;
+    border-radius: 10px;
+    background-color: burlywood;
+    padding: 0;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#display {
+  outline: 1px solid;
+  border-radius: 10px;
+  margin: 10px 10px 0 10px;
+  height: 12%;
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calc {
+  
+  margin-right: 5px;
+  height: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#ac {
+  margin-top: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 45px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#input {
+  margin: 25px 15px 0 15px;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.delete {
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+ 
+}
+
+.child {
+  height: 100%;
+  width: 45%;
+  margin: 0 auto;
+  
 }
