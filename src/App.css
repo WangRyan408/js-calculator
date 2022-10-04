@@ -71,6 +71,10 @@
   background-color: purple;
 }
 
-.op {
-  
+.disabled {
+  pointer-events: none;
+}
+
+.enabled {
+  pointer-events: auto;
 }
