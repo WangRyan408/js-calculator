@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { useState, useRef } from 'react';
 import './App.css';
 
@@ -13,6 +12,13 @@ function App() {
   
   function HandleNum(e) {
     
+    if (operators.length > 0) {
+      operators.forEach((x) => {
+        if (x.getAttribute('disabled') !== null) {
+          x.removeAttribute('disabled');
+        }
+      })
+    }
     
     if (equation === '0' && e.currentTarget.textContent === '.') {
       setEquation(equation + e.currentTarget.textContent);
@@ -27,8 +33,8 @@ function App() {
       
     }
     
-    console.log(equation);
-    console.log(operators)
+    
+    console.log(operators);
   }
 
   function handleClear(e) {
@@ -63,12 +69,25 @@ function App() {
         break;
       default:
     }
+    
   } else {
     setEquation(equation + e.currentTarget.textContent);
   }
+
+
   myRef.current.disabled = false;
   
-  console.log(equation);
+
+
+  //Disables all operators
+  
+  if (operators.length > 0) {
+    operators.forEach((x) => {
+      x.setAttribute('disabled', '');
+    })
+  }
+
+  
   
   }
 
@@ -77,20 +96,20 @@ function App() {
       setEquation(equation + e.currentTarget.textContent);
       
       myRef.current.disabled = true;
-    
-
-    console.log(equation);
-    
+  
   }
 
 
   function handleEqual(e) {
+    const divideZero = /\d+\/0/;
     if (e.currentTarget.textContent === '=') {
+      if (divideZero.test(equation)) {
+        setEquation('You can\'t divide by zero silly');
+      } else
       setEquation(Math.round(1000000000000 * eval(equation)) / 1000000000000);
       myRef.current.disabled = false;
-     
+      
     }
-    console.log(equation);
     
   }
 
