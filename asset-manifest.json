@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.58271346.css",
-    "main.js": "/react-gh-pages/static/js/main.af5a7abe.js",
-    "static/js/787.5d33341d.chunk.js": "/react-gh-pages/static/js/787.5d33341d.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.58271346.css.map": "/react-gh-pages/static/css/main.58271346.css.map",
-    "main.af5a7abe.js.map": "/react-gh-pages/static/js/main.af5a7abe.js.map",
-    "787.5d33341d.chunk.js.map": "/react-gh-pages/static/js/787.5d33341d.chunk.js.map"
+    "main.css": "/js-calculator/static/css/main.58271346.css",
+    "main.js": "/js-calculator/static/js/main.d681445c.js",
+    "static/js/787.5d33341d.chunk.js": "/js-calculator/static/js/787.5d33341d.chunk.js",
+    "index.html": "/js-calculator/index.html",
+    "main.58271346.css.map": "/js-calculator/static/css/main.58271346.css.map",
+    "main.d681445c.js.map": "/js-calculator/static/js/main.d681445c.js.map",
+    "787.5d33341d.chunk.js.map": "/js-calculator/static/js/787.5d33341d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58271346.css",
-    "static/js/main.af5a7abe.js"
+    "static/js/main.d681445c.js"
   ]
 }
